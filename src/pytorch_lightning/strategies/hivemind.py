@@ -146,7 +146,7 @@ class HivemindStrategy(Strategy):
         )
 
         visible_addresses = [
-            str(a) for a in self.dht.get_visible_maddrs() if not ipaddress.ip_address(a.values()[0]).is_loopback
+            str(a) for a in self.dht.get_visible_maddrs()
         ]
 
         if initial_peers is None:
